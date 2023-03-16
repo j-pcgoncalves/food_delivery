@@ -114,6 +114,42 @@ class DetailsScreen extends StatelessWidget {
                       shape: BoxShape.circle,
                       color: kPrimaryColor.withOpacity(.26),
                     ),
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: <Widget>[
+                        Container(
+                          padding: const EdgeInsets.all(15),
+                          height: 60,
+                          width: 60,
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: kPrimaryColor,
+                          ),
+                          child: SvgPicture.asset('assets/icons/bag.svg'),
+                        ),
+                        Positioned(
+                          right: 15,
+                          bottom: 10,
+                          child: Container(
+                            alignment: Alignment.center,
+                            height: 28,
+                            width: 28,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: kWhiteColor,
+                            ),
+                            child: Text(
+                              '0',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .labelLarge
+                                  ?.copyWith(
+                                      color: kPrimaryColor, fontSize: 16),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
