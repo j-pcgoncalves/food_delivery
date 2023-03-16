@@ -83,6 +83,36 @@ class FoodCard extends StatelessWidget {
                     ?.copyWith(color: kPrimaryColor),
               ),
             ),
+            Positioned(
+              top: 201,
+              left: 40,
+              child: SizedBox(
+                width: 210,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                      title,
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      'With $ingredient',
+                      style: TextStyle(
+                        color: kTextColor.withOpacity(.4),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    Text(
+                      description,
+                      maxLines: 3,
+                      style: TextStyle(
+                        color: kTextColor.withOpacity(.65),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),

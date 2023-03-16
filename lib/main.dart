@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         textTheme: const TextTheme(
           headlineSmall: TextStyle(fontWeight: FontWeight.bold),
           labelLarge: TextStyle(fontWeight: FontWeight.bold),
-          titleLarge: TextStyle(fontWeight: FontWeight.bold),
+          titleMedium: TextStyle(fontWeight: FontWeight.bold),
           bodyLarge: TextStyle(color: kTextColor),
         ),
       ),
