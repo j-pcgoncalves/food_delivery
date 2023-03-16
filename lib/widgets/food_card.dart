@@ -71,6 +71,18 @@ class FoodCard extends StatelessWidget {
                 ),
               ),
             ),
+            // Price
+            Positioned(
+              right: 20,
+              top: 80,
+              child: Text(
+                '\$$price',
+                style: Theme.of(context)
+                    .textTheme
+                    .headlineSmall
+                    ?.copyWith(color: kPrimaryColor),
+              ),
+            ),
           ],
         ),
       ),
