@@ -77,11 +77,27 @@ class HomeScreen extends StatelessWidget {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
-              children: <Widget>[
+              children: const <Widget>[
                 CategoryTitle(title: 'All', active: true),
+                CategoryTitle(title: 'Italian'),
+                CategoryTitle(title: 'Asian'),
+                CategoryTitle(title: 'Chinese'),
+                CategoryTitle(title: 'Burgers'),
               ],
             ),
-          )
+          ),
+          Container(
+            alignment: Alignment.centerLeft,
+            margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+            height: 50,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(color: kBorderColor),
+            ),
+            child: SvgPicture.asset('assets/icons/search.svg'),
+          ),
         ],
       ),
     );
