@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_delivery/constants.dart';
+import 'package:food_delivery/screens/details_screen.dart';
 import 'package:food_delivery/widgets/category_title.dart';
 import 'package:food_delivery/widgets/food_card.dart';
 
@@ -104,8 +105,16 @@ class HomeScreen extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 FoodCard(
-                  press: () {},
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) {
+                        return const DetailsScreen();
+                      }),
+                    );
+                  },
                   title: 'Vegan Salad Bowl',
+                  ingredient: 'Red Tomato',
                   image: 'assets/images/image_1.png',
                   price: 20,
                   calories: '420Kcal',
