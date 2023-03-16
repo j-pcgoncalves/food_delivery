@@ -109,6 +109,10 @@ class FoodCard extends StatelessWidget {
                         color: kTextColor.withOpacity(.65),
                       ),
                     ),
+                    const SizedBox(height: 16),
+                    Text(
+                      calories,
+                    ),
                   ],
                 ),
               ),
