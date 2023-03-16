@@ -121,6 +121,17 @@ class HomeScreen extends StatelessWidget {
                   description:
                       'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ',
                 ),
+                FoodCard(
+                  press: () {},
+                  title: 'Vegan Salad Bowl',
+                  ingredient: 'Lettuce',
+                  image: 'assets/images/image_2.png',
+                  price: 20,
+                  calories: '420Kcal',
+                  description:
+                      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ',
+                ),
+                const SizedBox(width: 20),
               ],
             ),
           )
