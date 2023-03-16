@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_delivery/constants.dart';
 import 'package:food_delivery/widgets/category_title.dart';
+import 'package:food_delivery/widgets/food_card.dart';
 
 void main() {
   runApp(const MyApp());
@@ -98,6 +99,22 @@ class HomeScreen extends StatelessWidget {
             ),
             child: SvgPicture.asset('assets/icons/search.svg'),
           ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: <Widget>[
+                FoodCard(
+                  press: () {},
+                  title: 'Vegan Salad Bowl',
+                  image: 'assets/images/image_1.png',
+                  price: 20,
+                  calories: '420Kcal',
+                  description:
+                      'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ',
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
